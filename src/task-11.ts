@@ -18,9 +18,9 @@ const createUserCard = ({ username, age, city }: User, role: Role): string => {
 };
 
 console.log(
-  createUserCard({ username: "Anna", age: 25, city: "Kyiv" }, "admin")
+  createUserCard({ username: "Anna", age: 25, city: "Kyiv" }, Role.Admin)
 );
 // Anna (25) — admin from Kyiv
 
-console.log(createUserCard({ username: "Max", age: 30 }, "guest"));
+console.log(createUserCard({ username: "Max", age: 30 }, Role.Guest));
 // Max (30) — guest from Unknown
